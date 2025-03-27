@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated File Upload</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+   <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"><p>FileFlow</p></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📁</div>
+            <p class="upload-text">Drag & drop files here or <span class="browse-text">browse</span></p>
+            <input type="file" id="fileInput" multiple hidden>
+        </div>
+
+        <div class="preview-grid" id="previewGrid"></div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="preview-modal" id="previewModal">
+        <button class="close-modal" id="closeModal">×</button>
+        <div class="preview-content" id="previewContent"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
